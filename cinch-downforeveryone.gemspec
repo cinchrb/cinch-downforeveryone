@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'cinch-downforeveryone'
-  s.version = '1.0.2'
+  s.version = '1.0.3'
   s.summary = 'Check if a website is up, using downforeveryoneorjustme.com'
   s.description = 'Check if a website is up, using downforeveryoneorjustme.com'
   s.authors = ['Dominik Honnef']
@@ -10,4 +10,5 @@ Gem::Specification.new do |s|
   s.files = Dir['LICENSE', 'README.md', '{lib,examples}/**/*']
   s.add_dependency("cinch", "~> 2.0")
   s.add_dependency("mechanize")
+  s.license = "MIT"
 end

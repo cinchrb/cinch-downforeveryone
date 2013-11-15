@@ -24,7 +24,7 @@ module Cinch
       def up?(url)
         url = url.gsub(/^https?:\/\//, '')
         page = @agent.get("http://downforeveryoneorjustme.com/#{url}")
-        !!(page.title.split(" -> ").first =~ / Up$/)
+        !!page.at('[id="container"]').content.match("It's just you")
       end
     end
   end
